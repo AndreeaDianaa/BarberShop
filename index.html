@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -18,16 +22,21 @@
         <img src="./Images/logo.svg" alt="Logo BarberShop" />
       </a>
 
-      <nav class="main-navigation">
-        <ul>
-          <li><a href="./About.html">About</a></li>
-          <li><a href="#">Services and Prices</a></li>
-          <li><a href="#">Barber</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="tel+380441111111:">+38 044 111 11 11</a>
-      <a href="https://goit.global/ro/" target="_blank"> Book a Service </a>
+      <div class="nav-container">
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Services and Prices</a></li>
+            <li><a href="#">Barbers</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="contact-container">
+          <a href="tel:+380441111111" class="phone-number">+38 044 111 11 11</a>
+          <button type="button" class="button">Book a Service</button>
+        </div>
+      </div>
 
       <section>
         <a href="https://www.youtube.com/" target="_blank">YouTube</a>
@@ -50,7 +59,11 @@
       <!--About section-->
       <section>
         <div>
-          <img src="Images/barber-img-1.png" alt="Frizer pune o spuma de ras" />
+          <img
+            src="Images/barber-img-1.png"
+            alt="Frizer pune o spuma de ras"
+            width="100px"
+          />
           <img
             src="Images/barber-img-2.png "
             alt="Frizer barbiereste cu briceag"
@@ -75,7 +88,7 @@
           comes to us!
         </p>
 
-        <button>Book a Service</button>
+        <button class="button">Book a Service</button>
       </section>
 
       <!--Services and Prices Section-->
@@ -122,7 +135,7 @@
           </li>
         </ul>
 
-        <button>Book a Service</button>
+        <button class="button">Book a Service</button>
       </section>
 
       <!--Old School Section-->
